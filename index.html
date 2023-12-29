@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p id="title">/r/FlutterDev</p>
+    <div class="tabs">
+        <div class="tab" onclick="loadData('hot')">Hot</div>
+        <div class="tab" onclick="loadData('new')">New</div>
+        <div class="tab" onclick="loadData('rising')">Rising</div>
+    </div>
+    <button id="store">Store To Firebase</button>
+    <div id="hot" class="tab-content"></div>
+    <div id="new" class="tab-content"></div>
+    <div id="rising" class="tab-content"></div>
+    <p id="information">Loading...</p>
+
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
